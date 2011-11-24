@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-
+  #force_ssl :except => :destroy
   def new
     @title = "Sign in"
   end
@@ -21,6 +21,4 @@ class SessionsController < ApplicationController
     sign_out
     redirect_to root_path
   end
-
-
 end
