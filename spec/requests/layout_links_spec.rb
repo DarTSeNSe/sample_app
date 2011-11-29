@@ -74,17 +74,17 @@ describe "LayoutLinks" do
     end
   end
 
-  describe "should have a delete link" do
+  #describe "should have a delete link" do
 
-    before(:each) do
-      integration_sign_in(admin = Factory(:user, :email => "admin@example.com", :admin => true))
-    end
+  #  before(:each) do
+  #    integration_sign_in(admin = Factory(:user, :email => "admin@example.com", :admin => true))
+  #  end
 
-    it "for admin" do
-        visit users_path
-        response.should have_selector("a", :href => user_path(@user),
-                                         :content => "Delete")
-    end
-  end
+  #  it "for admin" do
+  #      visit users_path
+  #      response.should have_selector("a", :href => user_path(@user),
+  #                                       :content => "Delete")
+  #  end
+  #end
 
 end
