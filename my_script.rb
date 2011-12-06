@@ -1,3 +1,4 @@
+=begin
 def string_shuffle(s)
    s.split('').shuffle.join
  end
@@ -49,3 +50,55 @@ puts friendship.call('cat', 'dog')
 
 materials = ['paper', 'gum', 'metal', 'wood']
 puts materials[0,2].inspect
+
+ p a = (1 <=> 2)
+p b = (1 <=> 1.0)
+p c = (b <=> a)
+puts c
+
+x = 0
+str = 'abc'
+str = case
+        when x == 1 then 1
+        when x == 2 then 2
+        when x == 3 then 3
+        end
+puts str
+
+class AssignConst
+  A = "constant" if true
+  def a
+    "method"
+  end
+  def get_a
+    p a
+    p A
+    a = "variable" if false
+    p a
+  end
+end
+test = AssignConst.new
+test.get_a
+
+#puts a = 1, 2, 3
+#puts b, = 1, 2, 3
+
+class Abc
+  def x
+    "method"
+  end
+  def getx
+    puts x
+    x = "variable" if false
+    puts x
+    x = "variable"
+    puts x
+  end
+  test = Abc.new
+  test.getx
+end
+=end
+
+d="sdf"
+p d.size
+
